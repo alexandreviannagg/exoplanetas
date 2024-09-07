@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nosso planeta, nosso lar</title>
+</head>
+
+<body>
+    <header>
+        <h1>Nosso planeta, nosso lar</h1>
+    </header>
+    <main>
+        <section id="conteudo-bg">
+            <div class="conteudo-bg-geral">
+                <div class="img-conteudo">
+                    <img src="./img/icoplaneta.png" alt="desenho do planeta terra">
+                </div>
+
+                <div class="text-conteudo">
+                    <h2>Por que cuidar do nosso planeta?</h2>
+
+                    <p>A Terra, nosso único lar confirmado no universo, enfrenta uma crise ambiental sem precedentes. A
+                        ação humana intensificou o aquecimento global, a perda de biodiversidade e a poluição, colocando
+                        em risco a vida no planeta. A busca por exoplanetas como Kepler-452b, Proxima Centauri b e
+                        TRAPPIST-1e, embora promissora, reforça a singularidade e a importância da Terra. Nosso
+                        planeta é um oásis cósmico que precisa ser protegido.</p>
+
+                    <p>A saúde do planeta está intrinsecamente ligada à nossa própria saúde. Um ambiente saudável
+                        garante água potável, ar puro e alimentos nutritivos. Proteger os ecossistemas é fundamental
+                        para garantir um futuro sustentável para as próximas gerações. Afinal, a Terra é o único planeta
+                        que conhecemos capaz de abrigar vida. A descoberta de sistemas planetários como TRAPPIST-1, com
+                        sete planetas orbitando uma estrela anã, reforça a complexidade e a raridade de encontrar um
+                        planeta com as condições ideais para a vida.</p>
+
+                    <p>Cada um de nós pode fazer a diferença. Atitudes simples, como reduzir o consumo, economizar
+                        energia e água, e optar por meios de transporte sustentáveis, contribuem para um futuro mais
+                        verde. É fundamental cobrar dos governos e das empresas ações mais responsáveis, como a adoção
+                        de energias renováveis e a proteção das áreas naturais. Ao unirmos forças, podemos construir um
+                        futuro mais próspero para todos. A exploração espacial e a busca por exoplanetas nos inspiram a
+                        cuidar ainda mais do nosso planeta, pois a Terra continua sendo o nosso lar mais seguro e
+                        precioso.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="universo">
+            <div class="universo-geral">
+                <div class="pesquisar-planeta">
+                    <input type="text" id="campo-pesquisa" placeholder="Pesquise um nome de um exoplaneta">
+
+                    <button class="botao-pesquisar" onclick="pesquisar()">Pesquisar planeta</button>
+
+                    <div class="planetas-descobertos">
+                        <h2 style="color: black; font-size: 20px;">Não sabe o nome de nenhum exoplaneta?</h2>
+                        
+                        <button class="botao-pesquisar" style="width: 70%;" onclick="verNomes()" >Clique para ver os exoplanetas</button>
+                    </div>    
+                </div>
+                
+                <div class="planetas-conteudo nomes-planetas" id="planetas-conteudo-nomes">
+                </div>
+
+
+                <div class="planetas-conteudo" id="planetas-conteudo">
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <p class="mensagem-final">Nesse momento é impossível chegar a um desses exoplanetas. Então cuide da nossa terrinha e combata o aquecimento global. O planeta e a natureza agradecem! :)</p>
+        </footer>
+    </main>
+
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

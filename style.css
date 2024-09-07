@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+body {
+    background-color: rgb(244, 241, 241);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(0, 119, 20);
+    margin: 10px 0px;
+}
+
+#conteudo-bg {
+    background-image: url(./img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+.conteudo-bg-geral {
+    background-color: rgba(1, 60, 1, 0.44);
+    height: 80vh;
+    display: flex;
+    padding-top: 10px;
+}
+.img-conteudo, .text-conteudo {
+    flex: 1;
+}
+.text-conteudo {
+    margin-right: 8px;
+}
+
+h2 { 
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: white;
+    margin-top: 40px;
+}
+
+p {
+    margin-top: 10px ;
+    font-size: 18px;
+    color: white;
+    text-justify: auto;
+    line-height: 20px;
+    text-align: left;
+}
+
+
+
+
+.planetas {
+    display: flex;
+    justify-content: space-around;
+}
+
+h3 { 
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    color: rgb(1, 112, 1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.planetas-conteudo {
+    height: 370px;
+    overflow: auto;
+    width: 55%;
+    margin: 30px auto;
+}
+.conteudo-planeta {
+    margin: 10px 0px;
+    text-align: center;
+    padding: 10px;
+    width: 95%;
+    background-color: rgb(251, 251, 251);
+    border: rgb(1, 112, 1) 2px solid;
+    border-radius: 18px;
+    clear: both; /* Evita que outros elementos se sobreponham ao botão */
+}
+.nomes-planetas {
+    position: relative; /* Necessário para o posicionamento absoluto do botão */
+}
+
+
+
+
+.excluir-lista {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(1, 112, 1);
+    border: black 2px solid;
+    color: white;
+    border-radius: 10px;
+    margin: 0 5px;
+}
+.nomes-planetas button:hover {
+    background-color: white;
+    color: rgb(1, 112, 1);
+}
+.nomes-planetas--titulo {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: black;
+    border-bottom: 2px solid rgb(1, 112, 1);
+    display: inline-block;
+
+}
+
+.pesquisar-planeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
+    width: 50%;
+}
+
+
+.planetas-descobertos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.planetas-descobertos h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+input {
+    border: rgb(1, 112, 1) 2px solid;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    width: 65%;
+}
+.botao-pesquisar {
+    background-color: rgb(1, 112, 1);
+    width: 20%;
+    color: white;
+    border: 2px solid rgb(0, 0, 0);
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+}
+.botao-pesquisar:hover {
+    background-color: white;
+    color: rgb(1, 112, 1);
+}
+.botao-info {
+    background-color: rgb(1, 112, 1);
+    border: 2px solid rgb(1, 27, 1);
+    color: white;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.botao-info:hover {
+    background-color: white;
+    color: rgb(1, 112, 1);
+}
+
+.img-planetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-planetas img {
+    width: 320px;
+    height: 320px;
+}
+
+
+.aviso {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: red;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(1, 27, 1);
+    margin-top: 20px;
+}
