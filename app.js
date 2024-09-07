@@ -44,7 +44,7 @@ function pesquisar() {
                 </div>
                 <div class="img-planetas">
                     <img src=${index.img} alt="">
-                    <p class="aviso">${index.ftnaoencontrada}</p> <!--Adicionei essa informação caso o planeta não ter uma ilustração ideal, ai optei por colocar a foto do planeta terra no lugar-->
+                    <p class="aviso">${index.fotoNaoEncontrada}</p> <!--Adicionei essa informação caso o planeta não ter uma ilustração ideal, ai optei por colocar a foto do planeta terra no lugar-->
                 </div>
                 <div class="descricao-planetas">
                     <p class="descricao-texto" style="color: black;">
